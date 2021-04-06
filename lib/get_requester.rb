@@ -3,6 +3,7 @@ require 'net/http'
 require 'json'
 
 class GetRequester
+
   def initialize(url)
     @url = url
   end
@@ -14,6 +15,8 @@ class GetRequester
   end
 
   def parse_json
-    JSON.parse(get_response_body)
+    JSON.parse(get_response_body) 
   end
 end
+
+
